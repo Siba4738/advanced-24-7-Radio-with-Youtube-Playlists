@@ -16,5 +16,10 @@
     "enmap": "^5.8.5",
     "ffmpeg-static": "^4.3.0",
     "ytdl-core": "^4.5.0"
+  },
+  "description": "",
+  "engines": {
+    "npm": "8.5.1",
+    "node": "^17.5.0"
   }
 }

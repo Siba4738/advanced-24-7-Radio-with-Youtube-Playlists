@@ -5,9 +5,9 @@ const client = new Discord.Client({
     partials: ["MESSAGE", "CHANNEL", "REACTION"]
 })
 const Distube = require("distube");
-client.playcmd = false;
+client.playcmd = true;
 client.distube = new Distube(client, {
-    searchSongs: false,
+    searchSongs: true,
     emitNewSongOnly: false,
     highWaterMark: 1024 * 1024 * 64,
     leaveOnEmpty: false,
@@ -21,8 +21,8 @@ client.distube = new Distube(client, {
 const embedsettings = {
     color: "#12ff56",
     wrongcolor: "#e01e01",
-    footertext: "Get free Discord Bots: shop.milrato.eu",
-    footericon: "https://img.icons8.com/color/452/discord-logo.png"
+    footertext: "...help | Kanki#0001",
+    footericon: "https://cdn.discordapp.com/attachments/949253235070365696/949328352127377458/VID_20220304204517_1.gif"
 }
 
 require("./distube-handler")(client, Discord, embedsettings)
